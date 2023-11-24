@@ -1,7 +1,7 @@
 ﻿#include <stdio.h>
 #include <math.h>
 
-double calculateStandardDeviation(double arr[], int n);
+double calculate(double arr[], int n);
 
 int main() {
 	int n = 5;
@@ -13,13 +13,13 @@ int main() {
 		scanf_s("%lf", &numbers[i]);
 	}
 
-	double stdDev = calculateStandardDeviation(numbers, n);
+	double stdDev = calculate(numbers, n);
 	printf("\nStandard Deviation = %.3lf", stdDev);
 
 	return 0;
 }
 
-double calculateStandardDeviation(double arr[], int n) {
+double calculate(double arr[], int n) {
 	double mean = 0.0, variance = 0.0, stdDev = 0.0;
 
 
