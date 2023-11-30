@@ -19,7 +19,7 @@ int main(void)
 {
 	char str[100];
 
-	printf("Inout> ");
+	printf("Input> ");
 	fgets(str, sizeof(str), stdin);
 
 	convCase(str);
